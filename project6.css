@@ -16,6 +16,7 @@ header{
     height:15%;
     display: flex;
     align-items: center;
+    margin-bottom: 1rem;
 }
 nav{
     width:80%;
@@ -65,4 +66,80 @@ nav{
     border:1px solid black;
     border-radius: 0.3rem;
     text-decoration: none;
+}
+main{
+    width:80%;
+    margin:0 auto;
+    padding:20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.content{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding:5rem 0;
+}
+.box{
+    width:40%;
+    height:500px;
+    border:1px solid black;
+    border-radius: 1rem;
+    background-image: url("/images/photo.jpeg");
+    background-size: cover;
+    background-position: left;
+}
+#text1{
+    text-transform: capitalize;
+    color:rgb(49, 49, 131);
+    font-size: 1rem;
+    font-weight: bold;
+}
+#text2{
+    font-size:3.5rem;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    margin-bottom: 10px;;
+}
+#text3{
+    font-size:1.2rem;
+    text-transform: capitalize;
+    color:rgb(74, 71, 71);
+    text-align: left;
+    line-height: 25px;
+    margin-bottom: 8px;
+}
+.buttons{
+    display: flex;
+    gap:15px;
+}
+.buttons a{
+    height:30px;
+    width:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    text-transform: capitalize;
+    border-radius: 0.3rem;
+    text-decoration: none;
+}
+#b1{
+    background-color: rgba(34, 34, 204, 0.849);
+}
+#b2{
+    background-color: rgb(26, 25, 25);
+}
+@media screen and (max-width:990px){
+    main{
+     flex-direction: column;
+     align-items: center;
+    }
+    .content{
+        width:100%;
+    }
+    #hyperlinks,#button{
+        display: none;
+    }
 }
