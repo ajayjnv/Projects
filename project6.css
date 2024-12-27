@@ -80,6 +80,19 @@ main{
     flex-direction: column;
     gap:20px;
     padding:5rem 0;
+    animation-name:slide-left;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+}
+@keyframes slide-left {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 .box{
     width:40%;
@@ -137,6 +150,9 @@ main{
      align-items: center;
     }
     .content{
+        width:100%;
+    }
+    .box{
         width:100%;
     }
     #hyperlinks,#button{
